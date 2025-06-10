@@ -1,7 +1,14 @@
+### Insta-Market
+
+Aplicación React para explorar productos usando la API de DummyJSON.
+
+
 ## 📋 Requisitos Previos
 
 - Node.js 
 - npm (incluido con Node.js)
+
+
 
 ## 💻 Tecnologías Utilizadas
 
@@ -15,3 +22,14 @@
 - **Producto mas barato:** Se muestra el nombre y el precio del producto con el menor valor.
 - **Precio total de los productos filtrados:** Suma de los precios de todos los productos que cumplen con el filtro de búsqueda.
 - **Promedio de descuento:** Se calcula el promedio del campo `discountPercentage` de los productos filtrados.
+
+## 📊 Gráficos Agregados
+
+## 👓 Modo claro/oscuro
+
+##  📓 Categorías agregadas
+
+## Notas
+
+- Usa la API pública de [DummyJSON](https://dummyjson.com/).
+- Los gráficos requieren la librería [Recharts](https://recharts.org/)
