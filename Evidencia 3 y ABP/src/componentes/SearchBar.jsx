@@ -6,7 +6,7 @@ function SearchBar({ value, onChange }) {
         placeholder="Buscar producto"
         value={value}
         onChange={onChange}
-        className="border p-2 m-2"
+        className="border p-4 m-4"
       />
     </div>
   );

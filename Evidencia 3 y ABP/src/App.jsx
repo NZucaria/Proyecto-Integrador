@@ -3,6 +3,7 @@ import React, { useEffect, useState, useRef } from "react";
 import Stats from "./componentes/StatsPanel";
 import SearchBar from "./componentes/SearchBar";
 import ProductList from "./componentes/ProductList";
+import GraficosPanel from "./componentes/GraficosPanel";
 
 function ListadoDeProductos() {
   const [lista, setLista] = useState([]);
@@ -42,7 +43,7 @@ function ListadoDeProductos() {
 
   return (
     <div ref={containerRef}>
-      <h1 className="text-6xl font-bold text-center my-4">Productos</h1>
+      <h1 className="text-6xl font-bold text-center my-4">Insta-Market</h1>
       <button
         onClick={toggleDarkMode}
         className="border border-gray-400 px-4 py-2 rounded hover:bg-gray-100 transition"
@@ -65,6 +66,7 @@ function ListadoDeProductos() {
       </select>
 
       <ProductList products={productosFiltrados} />
+      
 
       <div className="flex gap-2 my-4">
         <button
@@ -87,7 +89,7 @@ function ListadoDeProductos() {
           {show ? "Ocultar Estadísticas" : "Mostrar Estadísticas"}
         </button>
       </div>
-
+<GraficosPanel productos={productosFiltrados} />
       {show && <Stats filteredProducts={filteredProducts} />}
     </div>
   );
